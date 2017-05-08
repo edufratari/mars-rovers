@@ -1,3 +1,4 @@
+package com.github.edufratari.marsrovers;
 
 public class RoboticRovers {
 
