@@ -40,4 +40,7 @@ Java 1.8
 
 JUnit 4 for the tests
 
-## Running Tests
+## Running Tests and Compiiling
+To running the tests and compile with maven you have to install maven in your machine. After that, you have to put maven into environment variables so that it is possible to execute the mvn command in prompt of command.
+
+To compile you can enter the command *mvn compile* and to test you can use *mvn test*. Certify you are in the correct directory.
