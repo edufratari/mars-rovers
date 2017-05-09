@@ -8,13 +8,6 @@ public class RoboticRovers {
 	private int xPosition = 0;
 	private int yPosition = 0;
 
-	/**
-	 * 
-	 * @param xPosition
-	 * @param yPosition
-	 * @param direction
-	 * @param plateau
-	 */
 	public RoboticRovers(int xPosition, int yPosition, String direction, Plateau plateau) {
 		this.xPosition = xPosition;
 		this.yPosition = yPosition;
