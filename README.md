@@ -38,6 +38,8 @@ Second output:5 1 E
 ##  Technologies Used
 Java 1.8
 
+Maven 4.0
+
 JUnit 4 for the tests
 
 ## Running Tests and Compiiling
