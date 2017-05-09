@@ -45,6 +45,8 @@ JUnit 4 for the tests
 ## Running Tests and Compiiling
 To running the tests and compile with maven you have to install maven in your machine. After that, you have to put maven into environment variables so that it is possible to execute the mvn commands in command prompt.
 
+Clone the repository.
+
 To build the project and run the tests use **mvn clean install**. Certify you are in the correct directory.
 
 On the same directory as jar file, simply execute the command **java -jar Name_of_archive** and enter the data.
