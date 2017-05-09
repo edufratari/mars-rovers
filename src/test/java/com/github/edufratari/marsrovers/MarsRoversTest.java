@@ -1,4 +1,4 @@
-package com.github.edufratari.test;
+package com.github.edufratari.marsrovers;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
