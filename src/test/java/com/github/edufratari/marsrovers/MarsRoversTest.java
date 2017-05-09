@@ -31,4 +31,14 @@ public class MarsRoversTest {
 
 		assertEquals("Erro", "5 1 E", roboticRovers2.getCurrentPosition());
 	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void thirdInputTest() {
+
+		Plateau plateau = new Plateau(5, 5);
+
+		RoboticRovers roboticRovers1 = new RoboticRovers(0, 0, "N", plateau);
+		roboticRovers1.setPosition(6, 6, "E");
+		roboticRovers1.command("M");
+	}
 }
