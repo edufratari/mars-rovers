@@ -1,5 +1,7 @@
 package com.github.edufratari.marsrovers;
 
+import java.util.Scanner;
+
 public class MarsRovers {
 	
 	public static void main(String[] args) {
@@ -7,14 +9,22 @@ public class MarsRovers {
 		Plateau plateau = new Plateau(5, 5);
 		
 		RoboticRovers roboticRovers1 = new RoboticRovers(0, 0, "N", plateau);
-		RoboticRovers roboticRovers2 = new RoboticRovers(0, 0, "N", plateau);
-			
-		roboticRovers1.setPosition(1, 2, "N");
-		roboticRovers1.command("LMLMLMLMM");
-		roboticRovers1.printPosition();
 		
-		roboticRovers2.setPosition(3, 3, "E");
-		roboticRovers2.command("MMRMMRMRRM");
-		roboticRovers2.printPosition();	
+		Scanner s = new Scanner(System.in);
+
+		while (true) {
+			System.out.println("Enter the value of the  x position: ");
+			int x = s.nextInt();
+			System.out.println("Enter the value of the y position: ");
+			int y = s.nextInt();
+			System.out.println("Enter the direction in which the rover is positioned (N, S, E, W): ");
+			String dir = s.next();
+			System.out.println("Enter the command for the rover: ");
+			String n = s.next();
+
+			roboticRovers1.setPosition(x, y, dir);
+			roboticRovers1.command(n);
+			roboticRovers1.printPosition();
+		}
 	}
 }
