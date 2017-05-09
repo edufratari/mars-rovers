@@ -26,9 +26,6 @@ public class MarsRovers {
 		roboticRovers1.command(c);
 		roboticRovers1.printPosition();
 
-		
-		//Scanner s1 = new Scanner(System.in);
-
 		System.out.println("Enter the value of the  xPosition, yPosition and direction of rover 2: ");
 		String line1 = scanner.nextLine();
 		String[] parts1 = line1.split(" ");
