@@ -35,4 +35,9 @@ First output: 1 3 N
 
 Second output:5 1 E
 
+##  Technologies Used
+Java 1.8
+
+JUnit 4 for the tests
+
 ## Running Tests
