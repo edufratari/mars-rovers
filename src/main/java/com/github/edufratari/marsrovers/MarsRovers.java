@@ -5,26 +5,41 @@ import java.util.Scanner;
 public class MarsRovers {
 	
 	public static void main(String[] args) {
-		
+
 		Plateau plateau = new Plateau(5, 5);
-		
+
 		RoboticRovers roboticRovers1 = new RoboticRovers(0, 0, "N", plateau);
-		
+		RoboticRovers roboticRovers2 = new RoboticRovers(0, 0, "N", plateau);
+
 		Scanner s = new Scanner(System.in);
 
-		while (true) {
-			System.out.println("Enter the value of the  x position: ");
-			int x = s.nextInt();
-			System.out.println("Enter the value of the y position: ");
-			int y = s.nextInt();
-			System.out.println("Enter the direction in which the rover is positioned (N, S, E, W): ");
-			String dir = s.next();
-			System.out.println("Enter the command for the rover: ");
-			String n = s.next();
+		System.out.println("Enter the value of the  xPosition, yPosition and direction of rover 1: ");
+		String line = s.nextLine();
+		String[] parts = line.split(" ");
+		int x = Integer.parseInt(parts[0]);
+		int y = Integer.parseInt(parts[1]);
+		String n = parts[2];
+		System.out.println("Enter the command for the rover 1: ");
+		String c = s.next();
+		
+		roboticRovers1.setPosition(x, y, n);
+		roboticRovers1.command(c);
+		roboticRovers1.printPosition();
 
-			roboticRovers1.setPosition(x, y, dir);
-			roboticRovers1.command(n);
-			roboticRovers1.printPosition();
-		}
+		
+		Scanner s1 = new Scanner(System.in);
+
+		System.out.println("Enter the value of the  xPosition, yPosition and direction of rover 2: ");
+		String line1 = s1.nextLine();
+		String[] parts1 = line1.split(" ");
+		int x1 = Integer.parseInt(parts1[0]);
+		int y1 = Integer.parseInt(parts1[1]);
+		String n1 = parts1[2];
+		System.out.println("Enter the command for the rover 2: ");
+		String c1 = s1.next();
+		
+		roboticRovers2.setPosition(x1, y1, n1);
+		roboticRovers2.command(c1);
+		roboticRovers2.printPosition();
 	}
 }
