@@ -45,4 +45,4 @@ To running the tests and compile with maven you have to install maven in your ma
 
 To compile you can enter the command **mvn compile** and to test you can use **mvn test**. Certify you are in the correct directory.
 
-On the same directory as jar file, simply execute the command **java -jar Name_of_archive**
+On the same directory as jar file, simply execute the command **java -jar Name_of_archive** and enter the data.
