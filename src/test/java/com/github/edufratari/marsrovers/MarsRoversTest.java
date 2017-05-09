@@ -25,10 +25,10 @@ public class MarsRoversTest {
 
 		Plateau plateau = new Plateau(5, 5);
 
-		RoboticRovers roboticRovers1 = new RoboticRovers(0, 0, "N", plateau);
-		roboticRovers1.setPosition(3, 3, "E");
-		roboticRovers1.command("MMRMMRMRRM");
+		RoboticRovers roboticRovers2 = new RoboticRovers(0, 0, "N", plateau);
+		roboticRovers2.setPosition(3, 3, "E");
+		roboticRovers2.command("MMRMMRMRRM");
 
-		assertEquals("Erro", "5 1 E", roboticRovers1.getCurrentPosition());
+		assertEquals("Erro", "5 1 E", roboticRovers2.getCurrentPosition());
 	}
 }
